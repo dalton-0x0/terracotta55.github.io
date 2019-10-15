@@ -79,7 +79,7 @@ const functions = {
 	},
 	onClearCalcClicked: () => {
 		let displayVal = "cleared...";
-		calcDisplayElement.innerHTML = displayVal;
+		calcDisplayElement.textContent = displayVal;
 	},
 	taxes: income => {
 		const taxBracket_01 = 47630,
@@ -112,7 +112,7 @@ const functions = {
 	},
 	onTaxButtonClicked: () => {
 		let taxResult = functions.taxes(Number(taxInput.value));
-		taxDisplayVal.innerHTML = `your 2019 taxes would be $${taxResult.toFixed(2)}`;
+		taxDisplayVal.textContent = `your 2019 taxes would be $${taxResult.toFixed(2)}`;
 		taxInput.value = "";
 	},
 	arrayAdd: num => {
@@ -156,7 +156,7 @@ const functions = {
 		return arrTotal;
 	},
 	onClearArrayClicked: () => {
-		arrDisplayVal.innerHTML = "cleared arr...";
+		arrDisplayVal.textContent = "cleared arr...";
 	},
 	canadaProv: str => {
 		newStr = str.toLowerCase();
@@ -213,19 +213,5 @@ const functions = {
 /*
  **** comment this out to run test
  */
-
-document.getElementById("btn-add").addEventListener("click", functions.onAddButtonClicked);
-document.getElementById("btn-sub").addEventListener("click", functions.onSubButtonClicked);
-document.getElementById("btn-mul").addEventListener("click", functions.onMulButtonClicked);
-document.getElementById("btn-dvd").addEventListener("click", functions.onDvdButtonClicked);
-document.getElementById("btn-calc-clear").addEventListener("click", functions.onClearCalcClicked);
-
-document.getElementById("btn-tax").addEventListener("click", functions.onTaxButtonClicked);
-document.getElementById("btn-arr-add").addEventListener("click", functions.onAddToArrayClicked);
-document.getElementById("btn-arr-show").addEventListener("click", functions.onShowArrayClicked);
-document.getElementById("btn-arr-total").addEventListener("click", functions.onTotalArrayClicked);
-document.getElementById("btn-arr-clear").addEventListener("click", functions.onClearArrayClicked);
-
-document.getElementById("btn-obj-lookup").addEventListener("click", functions.onObjLookupClicked);
 
 export default functions;
