@@ -1,8 +1,7 @@
-import functions from "./functions";
-// import calculator from "./calc-func";
+import functions from "./functions.js";
 
 test("testing size function", () => {
-	expect(functions.size(-1)).toBe("negative"); // Consider the edge cases
+	expect(functions.size(-1)).toBe("negative");
 	expect(functions.size(0)).toBe("small");
 	expect(functions.size(10)).toBe("medium");
 	expect(functions.size(15)).toBe("medium");
