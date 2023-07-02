@@ -1,18 +1,21 @@
 {
-  "name": "jest-p2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "fun-with-numbers",
+  "version": "1.1.0",
+  "description": "Just an app for you to have fun with numbers",
+  "author": "Dalton Okechukwu",
+  "source": "index.html",
   "scripts": {
     "test": "jest",
     "testcov": "jest --coverage",
     "test1": "jest src/01-getting-started",
     "test1cov": "jest src/01-getting-started --coverage",
     "testfile": "jest src/01-getting-started/scripts/lfsplay.test.js",
-    "testdalton": "jest src/javascript/daily.test.js"
+    "testdalton": "jest src/javascript/daily.test.js",
+    "start": "parcel"
   },
-  "keywords": [],
-  "author": "",
+  "dependencies": {
+    "parcel": "^2.8.2"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
