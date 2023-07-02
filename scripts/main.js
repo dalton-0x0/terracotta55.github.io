@@ -1,20 +1,25 @@
 import functions from "./functions.js";
-// =================define variables for calculator====================
+
+// define variables for calculator
 let inputOne = document.querySelector("#calc-input-1");
 let inputTwo = document.querySelector("#calc-input-2");
 let calcDisplayElement = document.getElementById("calc-display-val");
-// =================define variables for taxes====================
+
+// define variables for taxes
 let taxInput = document.querySelector("#tax-input");
 let taxDisplayVal = document.getElementById("tax-display-val");
-// =================define variables for arrays====================
+
+// define variables for arrays
 let numArray = [];
 let arrInput = document.querySelector("#arr-input");
 let arrDisplayVal = document.querySelector("#arr-display-val");
-// =================define variables for dictionary====================
+
+// define variables for dictionary
 let objResult = "";
 let objDisplayVal = document.querySelector("#obj-display-val");
 let objInput = document.querySelector("#obj-input");
-// =================add event listeners for all events in body====================
+
+// add event listeners for all events in bod
 idNumber.addEventListener("change", () => {
   idNumberSize.textContent = functions.size(idNumber.value);
 });
